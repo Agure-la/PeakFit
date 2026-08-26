@@ -7,9 +7,12 @@ import RecoverySection from './components/RecoverySection'
 import PackagesSection from './components/PackagesSection'
 import InstructorsSection from './components/InstructorsSection'
 import ReviewsSection from './components/ReviewsSection'
+import WorkoutTracker from './components/WorkoutTracker'
+import FitnessGoals from './components/FitnessGoals'
+import ProgressTracker from './components/ProgressTracker'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
-import { MessageCircle, ArrowUp } from 'lucide-react'
+import { MessageCircle, ArrowUp, Dumbbell } from 'lucide-react'
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -37,6 +40,9 @@ function App() {
         <PackagesSection />
         <InstructorsSection />
         <ReviewsSection />
+        <WorkoutTracker />
+        <FitnessGoals />
+        <ProgressTracker />
         <ContactSection />
       </main>
       <Footer />

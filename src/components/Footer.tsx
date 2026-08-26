@@ -13,6 +13,16 @@ const Footer = () => {
       ],
     },
     {
+      title: 'Fitness Tracker',
+      links: [
+        { name: '💪 Workout Tracker', href: '#workouts' },
+        { name: '🎯 Fitness Goals', href: '#goals' },
+        { name: '📈 Progress Monitor', href: '#progress' },
+        { name: 'Send Report to Trainer', href: '#progress' },
+        { name: 'Export to WhatsApp', href: '#progress' },
+      ],
+    },
+    {
       title: 'Membership',
       links: [
         { name: 'Starter Plan', href: '#packages' },
@@ -46,8 +56,8 @@ const Footer = () => {
       <div className="absolute top-0 left-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid lg:grid-cols-12 gap-10 mb-12">
-          <div className="lg:col-span-4">
+        <div className="grid lg:grid-cols-12 gap-8 mb-12">
+          <div className="lg:col-span-4 xl:col-span-3">
             <a href="#home" className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-gradient-brand rounded-xl flex items-center justify-center glow-orange">
                 <Dumbbell className="w-7 h-7 text-white" />
@@ -105,19 +115,19 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="lg:col-span-7 xl:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
             {sections.map((section, i) => (
               <div key={i}>
-                <h4 className="text-white font-bold mb-5 tracking-wide">{section.title}</h4>
-                <ul className="space-y-3">
+                <h4 className="text-white font-bold mb-5 tracking-wide text-sm">{section.title}</h4>
+                <ul className="space-y-2.5">
                   {section.links.map((link, j) => (
                     <li key={j}>
                       <a
                         href={link.href}
-                        className="group inline-flex items-center gap-1 text-sm text-gray-400 hover:text-brand-400 transition-colors"
+                        className="group inline-flex items-center gap-1 text-xs text-gray-400 hover:text-brand-400 transition-colors"
                       >
-                        <ChevronRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-brand-400" />
-                        {link.name}
+                        <ChevronRight className="w-3 h-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-brand-400 flex-shrink-0" />
+                        <span className="truncate">{link.name}</span>
                       </a>
                     </li>
                   ))}
@@ -126,7 +136,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-12 xl:col-span-2">
             <h4 className="text-white font-bold mb-5 tracking-wide">Quick Actions</h4>
             <div className="space-y-3">
               <a

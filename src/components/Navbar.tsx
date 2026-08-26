@@ -21,6 +21,12 @@ const Navbar = () => {
     { name: 'Packages', href: '#packages' },
     { name: 'Trainers', href: '#trainers' },
     { name: 'Reviews', href: '#reviews' },
+  ]
+
+  const trackerLinks = [
+    { name: 'Workouts', href: '#workouts' },
+    { name: 'Goals', href: '#goals' },
+    { name: 'Progress', href: '#progress' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -40,7 +46,7 @@ const Navbar = () => {
             </div>
           </a>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -51,6 +57,39 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-500 transition-all group-hover:w-full"></span>
               </a>
             ))}
+            <div className="w-px h-6 bg-dark-600 mx-1"></div>
+            <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-gradient-brand/10 border border-brand-500/30">
+              <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider">Tracker</span>
+            </div>
+            {trackerLinks.slice(0, 3).map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-semibold text-brand-300 hover:text-brand-400 transition-colors relative group"
+              >
+                {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-500 transition-all group-hover:w-full"></span>
+              </a>
+            ))}
+            <a
+              key="nav-contact"
+              href="#contact"
+              className="text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors relative group"
+            >
+              Contact
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-500 transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+
+          <div className="hidden lg:flex xl:hidden items-center gap-5">
+            {navLinks.slice(0, 5).map((link) => (
+              <a key={link.name} href={link.href} className="text-sm font-medium text-gray-300 hover:text-brand-400 transition-colors">
+                {link.name}
+              </a>
+            ))}
+            <a href="#workouts" className="text-sm font-bold text-brand-400 hover:text-brand-300 flex items-center gap-1">
+              <Dumbbell className="w-3.5 h-3.5" /> Tracker
+            </a>
           </div>
 
           <div className="hidden lg:flex items-center gap-4">
@@ -75,8 +114,9 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-dark-900/98 backdrop-blur-lg border-t border-dark-600 animate-fade-in">
-          <div className="px-4 py-6 space-y-2">
+        <div className="lg:hidden bg-dark-900/98 backdrop-blur-lg border-t border-dark-600 animate-fade-in max-h-[80vh] overflow-y-auto">
+          <div className="px-4 py-6 space-y-1">
+            <div className="text-[10px] uppercase tracking-widest text-gray-500 font-bold px-4 py-2">Explore</div>
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -87,11 +127,24 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <div className="text-[10px] uppercase tracking-widest text-brand-400 font-bold px-4 pt-4 pb-2 flex items-center gap-2">
+              <Dumbbell className="w-3 h-3" /> Fitness Tracker
+            </div>
+            {trackerLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-3 bg-gradient-to-r from-brand-500/5 to-transparent text-brand-300 hover:from-brand-500/15 rounded-lg transition-colors font-semibold border border-brand-500/20"
+              >
+                {link.name}
+              </a>
+            ))}
             <a
               href="https://wa.me/254712345678"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full mt-4 px-5 py-3 bg-gradient-brand text-white rounded-full font-semibold"
+              className="flex items-center justify-center gap-2 w-full mt-6 px-5 py-3 bg-gradient-brand text-white rounded-full font-semibold"
             >
               <Phone className="w-4 h-4" />
               Join Now
