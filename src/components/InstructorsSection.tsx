@@ -9,7 +9,7 @@ const InstructorsSection = () => {
       experience: '12+ years',
       certifications: ['NSCA-CSCS', 'NASM-CPT', 'Olympic Lifting'],
       image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20male%20fitness%20trainer%20headshot%20portrait%2C%20muscular%20build%2C%20wearing%20black%20athletic%20shirt%2C%20confident%20smile%2C%20modern%20gym%20background%2C%20professional%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 500, transformations: 300 },
+      stats: { clients: 50, transformations: 20 },
       color: 'from-orange-500 to-red-500',
     },
     {
@@ -19,7 +19,7 @@ const InstructorsSection = () => {
       experience: '8+ years',
       certifications: ['Registered Dietitian', 'Sports Nutritionist', 'ISSN Specialist'],
       image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20female%20nutritionist%20headshot%20portrait%2C%20friendly%20smile%2C%20wearing%20white%20coat%20or%20athletic%20wear%2C%20healthy%20food%20in%20background%2C%20professional%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 400, transformations: 280 },
+      stats: { clients: 40, transformations: 28 },
       color: 'from-green-500 to-emerald-500',
     },
     {
@@ -29,7 +29,7 @@ const InstructorsSection = () => {
       experience: '10+ years',
       certifications: ['CrossFit L3', 'USA Weightlifting', 'FMS Certified'],
       image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20male%20CrossFit%20coach%20headshot%20portrait%2C%20athletic%20build%2C%20wearing%20training%20shirt%2C%20determined%20expression%2C%20gym%20equipment%20background%2C%20professional%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 350, transformations: 220 },
+      stats: { clients: 35, transformations: 22 },
       color: 'from-blue-500 to-cyan-500',
     },
   ]

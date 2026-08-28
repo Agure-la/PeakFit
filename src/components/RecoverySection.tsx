@@ -7,7 +7,7 @@ const RecoverySection = () => {
       title: 'Sports Massage Therapy',
       description: 'Deep tissue and sports massage to release tight muscles, improve circulation, and accelerate recovery after intense training.',
       includes: ['Deep tissue massage', 'Trigger point therapy', 'Myofascial release', '60 & 90 min sessions'],
-      price: 'From KSh 2,500',
+      price: 'From KSh 500',
     },
     {
       icon: Droplets,

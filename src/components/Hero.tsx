@@ -2,8 +2,8 @@ import { ArrowRight, Play, Users, Trophy, Clock } from 'lucide-react'
 
 const Hero = () => {
   const stats = [
-    { icon: Users, value: '2,500+', label: 'Active Members' },
-    { icon: Trophy, value: '50+', label: 'Expert Trainers' },
+    { icon: Users, value: '70+', label: 'Active Members' },
+    { icon: Trophy, value: '5+', label: 'Expert Trainers' },
     { icon: Clock, value: '24/7', label: 'Gym Access' },
   ]
 
