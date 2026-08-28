@@ -35,7 +35,7 @@ const RecoverySection = () => {
       title: 'Cryotherapy',
       description: 'Whole-body cryotherapy sessions to reduce inflammation, speed muscle recovery, and boost endorphins naturally.',
       includes: ['3-min cold therapy', 'Localized cryo options', 'Post-workout recovery boost', 'Anti-inflammatory benefits'],
-      price: 'From KSh 1,500',
+      price: 'From KSh 1,000',
     },
     {
       icon: Activity,

@@ -42,33 +42,13 @@ const ReviewsSection = () => {
       result: 'Post-baby body transformation, 18kg lost',
       color: 'from-green-500 to-emerald-500',
     },
-    {
-      name: 'James Kariuki',
-      age: 40,
-      role: 'Bank Manager',
-      rating: 5,
-      duration: 'Member for 9 months',
-      text: 'The 24/7 access was a lifesaver. With my crazy work schedule, I can hit the gym at 5am or 10pm. The Pro plan with 2 PT sessions a month plus the custom diet plan is worth every shilling. My cholesterol dropped 30%!',
-      result: 'Cholesterol down 30%, BP normalized',
-      color: 'from-blue-500 to-cyan-500',
-    },
-    {
-      name: 'Naomi Jelimo',
-      age: 22,
-      role: 'University Student',
-      rating: 5,
-      duration: 'Member for 6 months',
-      text: 'As a broke student, I was worried gyms were too expensive. The Starter plan plus student discount was perfect! Grace\'s yoga classes helped me manage stress during exams and I\'m so much stronger now. Highly recommend!',
-      result: 'Strength +30%, better mental health',
-      color: 'from-teal-500 to-cyan-500',
-    },
   ]
 
   const aggregateStats = [
-    { label: 'Average Rating', value: '4.9/5', icon: Star },
-    { label: 'Google Reviews', value: '1,200+', icon: Quote },
-    { label: 'Member Retention', value: '94%', icon: User },
-    { label: 'Recommendation Rate', value: '98%', icon: Star },
+    { label: 'Average Rating', value: '4.0/5', icon: Star },
+    { label: 'Google Reviews', value: '200+', icon: Quote },
+    { label: 'Member Retention', value: '90%', icon: User },
+    { label: 'Recommendation Rate', value: '90%', icon: Star },
   ]
 
   return (

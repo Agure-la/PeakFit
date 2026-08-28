@@ -32,36 +32,6 @@ const InstructorsSection = () => {
       stats: { clients: 350, transformations: 220 },
       color: 'from-blue-500 to-cyan-500',
     },
-    {
-      name: 'Sarah Akinyi',
-      role: 'Women\'s Fitness Lead',
-      specialty: 'Body Sculpting & Glute Training',
-      experience: '7+ years',
-      certifications: ['ACE Certified', 'Pre/Post Natal', 'Booty Building Expert'],
-      image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20female%20fitness%20trainer%20headshot%20portrait%2C%20athletic%20muscular%20build%2C%20wearing%20sports%20bra%20and%20leggings%2C%20confident%20smile%2C%20modern%20gym%20background%2C%20professional%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 600, transformations: 450 },
-      color: 'from-pink-500 to-rose-500',
-    },
-    {
-      name: 'Michael Otieno',
-      role: 'Boxing & MMA Coach',
-      specialty: 'Combat Sports & Conditioning',
-      experience: '15+ years',
-      certifications: ['Pro Boxer Retired', 'MMA Coach', 'Conditioning Specialist'],
-      image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20male%20boxing%20coach%20headshot%20portrait%2C%20wearing%20boxing%20handwraps%2C%20tough%20confident%20look%2C%20boxing%20ring%20or%20punching%20bag%20background%2C%20professional%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 250, transformations: 180 },
-      color: 'from-purple-500 to-violet-500',
-    },
-    {
-      name: 'Grace Nduta',
-      role: 'Yoga & Recovery Specialist',
-      specialty: 'Yoga, Mobility & Recovery',
-      experience: '6+ years',
-      certifications: ['RYT-500 Yoga', 'Pilates Instructor', 'Foam Rolling'],
-      image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Professional%20african%20american%20female%20yoga%20instructor%20headshot%20portrait%2C%20peaceful%20serene%20smile%2C%20wearing%20yoga%20outfit%2C%20yoga%20mat%20and%20plants%20background%2C%20soft%20natural%20lighting%2C%20high%20quality&image_size=square',
-      stats: { clients: 300, transformations: 200 },
-      color: 'from-teal-500 to-cyan-500',
-    },
   ]
 
   return (

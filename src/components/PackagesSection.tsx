@@ -25,7 +25,7 @@ const PackagesSection = () => {
     {
       name: 'Pro',
       tagline: 'Our most popular plan',
-      price: '6,500',
+      price: '5,500',
       period: '/month',
       icon: Star,
       popular: true,
@@ -47,7 +47,7 @@ const PackagesSection = () => {
     {
       name: 'Elite',
       tagline: 'For serious athletes',
-      price: '12,500',
+      price: '7,500',
       period: '/month',
       icon: Crown,
       popular: false,
@@ -70,10 +70,10 @@ const PackagesSection = () => {
   ]
 
   const addons = [
-    { name: 'Personal Training', price: '1,500', unit: '/session', desc: 'One-on-one expert coaching' },
-    { name: 'Diet Plan (Custom)', price: '3,000', unit: '/plan', desc: 'Full nutrition plan by dietitian' },
-    { name: 'Sports Massage', price: '2,500', unit: '/hour', desc: 'Deep tissue recovery massage' },
-    { name: 'Cryotherapy', price: '1,500', unit: '/session', desc: 'Whole body cold therapy' },
+    { name: 'Personal Training', price: '500', unit: '/session', desc: 'One-on-one expert coaching' },
+    { name: 'Diet Plan (Custom)', price: '8000', unit: '/plan', desc: 'Full nutrition plan by dietitian' },
+    { name: 'Sports Massage', price: '1000', unit: '/hour', desc: 'Deep tissue recovery massage' },
+    { name: 'Cryotherapy', price: '1000', unit: '/session', desc: 'Whole body cold therapy' },
   ]
 
   return (
